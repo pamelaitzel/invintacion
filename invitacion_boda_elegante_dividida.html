@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boda Jovita & Jhoan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+   
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-image: url(../invitacion/fondo1.jpg);
+      background-size: cover;
+      color: #5a3e2b;
+    }
+
+    nav {
+      background-color: rgba(92, 64, 51, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 12px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    }
+
+    nav a {
+      color: #fdf2e9;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+      font-size: 1.1em;
+      font-family: 'Playfair Display', serif;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #e1b07e;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 80px 40px;
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+      animation: fadeIn 1.5s ease forwards;
+      border: 5px dashed #a7704a;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.75);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      backdrop-filter: blur(3px);
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #70462b;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #5a3e2b;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .imagen-caballo {
+      width: 100%;
+      max-width: 340px;
+      border-radius: 15px;
+      margin: 30px auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      animation: fadeIn 2s ease;
+    }
+
+    .boton {
+      background-color: #a7704a;
+      color: white;
+      padding: 16px 36px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 14px;
+      text-decoration: none;
+      margin-top: 40px;
+      display: inline-block;
+      transition: background 0.3s ease, transform 0.3s ease;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .boton:hover {
+      background-color: #c78b60;
+      transform: scale(1.05);
+    }
+
+    iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      border-radius: 14px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .countdown {
+      font-size: 1.8em;
+      margin-top: 35px;
+      font-weight: bold;
+      color: #7a563d;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#bienvenida">Inicio</a>
+  <a href="#misa">Ceremonia</a>
+  <a href="#recepcion">Recepción</a>
+  <a href="#vestimenta">Vestimenta</a>
+  <a href="#confirmar">Confirmar</a>
+  <a href="#fotos">fotos</a>
+  <a href="#cuenta">Cuenta regresiva</a>
+</nav>
+
+<section id="familia">
+  <h2>👨‍👩‍👧‍👦 Con la bendición de nuestros padres:</h2>
+  <p>✝ Juan Manuel Barrera Rueda & Ma Alejandra Gutiérrez Chánez</p>
+  <p>Joel Juárez Santiago & Luisa Olga Lidia Cortez Gante</p>
+  <h2>🌟 Nuestros Padrinos</h2>
+  <p>Ma. Isabel González Barrón & Augusto Emmanuel Gutiérrez Barrera</p>
+</section>
+
+<section id="bienvenida">
+  <h1>Jovita & Jhoan 💍</h1>
+  <p>El amor y el compromiso es nuestro, pero la promesa es para Dios y donde está Dios no falta nada.</p>
+  <img src="caballos.jpg" class="imagen-caballo" alt="Caballos" />
+</section>
+
+<section id="misa">
+  <h2>💒 Ceremonia Religiosa</h2>
+  <p>La ceremonia religiosa será el momento en que uniremos nuestras vidas ante Dios y nuestros seres queridos. Nos encantaría que estés con nosotros en este instante tan especial.</p>
+  <p>📍 Capilla Corpus Cristi</p>
+  <p>🗓️ Sábado 6 de diciembre de 2025</p>
+  <p>⏰ 1:45 p.m.</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.9363787818896!2d-99.13422642402066!3d19.370284144440543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00205dfae5c7%3A0x46f9e8cf13c4be3b!2sCapilla%20Corpus%20Cristi!5e0!3m2!1ses-419!2smx!4v1720456585485!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <br><br>
+  <a class="boton" href="https://maps.app.goo.gl/g5bVM3zE2ei9MVbC8?g_st=iw" target="_blank">Ver en Google Maps</a>
+</section>
+
+<section id="recepcion">
+  <h2>🎉 Recepción</h2>
+  <p>Después de la ceremonia, hemos reservado un lugar muy especial para celebrar este nuevo comienzo. Ven a disfrutar con nosotros entre risas, buena comida y mucho amor.</p>
+  <p>📍 Rancho San José, Villa del Carbón</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.1472294197254!2d-99.45147492401855!3d19.739391081682883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d23dd16ab41a8d%3A0x461238d68d7894af!2sRANCHO%20SAN%20JOS%C3%89%20VC!5e0!3m2!1ses!2smx!4v1720443318047!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <br><br>
+  <a class="boton" href="https://www.google.com.mx/maps/place/RANCHO+SAN+JOS%C3%89+VC/@19.7393911,-99.4514749,17z" target="_blank">Ver en Google Maps</a>
+</section>
+
+<section id="vestimenta">
+  <h2>👢  Código de Vestimenta</h2>
+  <p>La ocasión es especial, así que te invitamos a vestir con estilo vaquero elegante.</p>
+  <p><strong>¡No olvides llevar tus botas!</strong> 👢</p>
+</section>
+
+<section id="confirmar">
+  <h2>Confirmación</h2>
+  <p>Tu presencia es muy importante para nosotros. Por favor, confirma tu asistencia 20 dias antes para ayudarnos a planear un día perfecto.</p>
+
+  <div class="confirmacion-boton">
+    <a class="boton" href="https://wa.me/5618071481?text=Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Jovita%20y%20Jhoan" target="_blank">Confirmar a Jovita </a>
+  </div>
+
+  <div class="confirmacion-boton">
+    <a class="boton" href="https://wa.me/6461091416?text=Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Jovita%20y%20Jhoan" target="_blank">Confirmar a Jhoan </a>
+  </div>
+</section>
+<section id="fotos">
+  <h2>📸 Comparte tus fotos por WhatsApp</h2>
+  <p>Escanea el código para mandarnos tus fotos directamente a WhatsApp.</p>
+
+  <img id="qr-whatsapp" class="imagen-caballo" alt="QR WhatsApp" />
+  <br>
+  <a class="boton" href="https://wa.me/5618071481?text=Hola,%20aquí%20están%20mis%20fotos%20de%20la%20boda" target="_blank">Enviar por WhatsApp</a>
+</section>
+
+<script>
+  const URL_WA = "https://wa.me/5618071481?text=Hola,%20aquí%20están%20mis%20fotos%20de%20la%20boda";
+  const qrService = "https://api.qrserver.com/v1/create-qr-code/";
+  const params = new URLSearchParams({ size: "400x400", data: URL_WA });
+  document.getElementById("qr-whatsapp").src = `${qrService}?${params.toString()}`;
+</script>
+
+
+
+<section id="cuenta">
+  <h2>Cuenta Regresiva</h2>
+  <p>¡Ya falta muy poco para este gran día!</p>
+  <div class="countdown" id="cuenta-regresiva"></div>
+</section>
+
+<script>
+  const cuenta = document.getElementById("cuenta-regresiva");
+  const evento = new Date("2025-12-06T13:45:00");
+
+  function actualizarCuenta() {
+    const ahora = new Date();
+    const diferencia = evento - ahora;
+
+    if (diferencia < 0) {
+      cuenta.innerHTML = "¡Ya comenzó la boda!";
+      return;
+    }
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+    const segundos = Math.floor((diferencia / 1000) % 60);
+
+    cuenta.innerHTML = `Faltan ${dias}d ${horas}h ${minutos}m ${segundos}s`;
+  }
+
+  setInterval(actualizarCuenta, 1000);
+  actualizarCuenta();
+</script>
+
+</body>
+</html>
